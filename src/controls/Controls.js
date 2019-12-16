@@ -1,8 +1,9 @@
+//----------------------------------------------------------------------//
 import React from 'react';
-
+//----------------------------------------------------------------------//
 const Controls = props => {
   const { locked, closed, toggleLocked, toggleClosed } = props;
-
+//----------------------------------------------------------------------//
   return (
     <div className="controls panel">
       <button disabled={!closed} onClick={toggleLocked} className="toggle-btn">
@@ -14,5 +15,6 @@ const Controls = props => {
     </div>
   );
 };
-
+//----------------------------------------------------------------------//
 export default Controls;
+//----------------------------------------------------------------------//
